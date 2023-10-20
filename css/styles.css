@@ -11,6 +11,7 @@
     margin: 0;
     box-shadow: none;
     border: none;
+    color: inherit;
   }
   /******************************************
   /* BASE STYLES
@@ -33,7 +34,7 @@
     line-height: 1.2;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.2;
     display: inline-block;
@@ -41,4 +42,32 @@
   a {
     text-decoration: none;
     display: inline-block;
+  }
+  .nav-header, .hero, .nav-footer {
+    background-color: #000;
+    color: #FDFDFD;
+  }
+  .slogan {
+    font-size: 1.8rem;
+    font-weight: lighter;
+  }
+  .hamburguer {
+    font-size: 3.6rem;
+  }
+  .claims, .cosmetic {
+    background-color: #cacaca;
+  }
+  .main-CTA {
+    display: flex;
+    align-content: center;
+    background-color: #b22037;
+    min-width: 16.5rem;
+    min-height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: #FDFDFD;
+  }
+  .nav-header, .logo, .menu, .menu-items {
+    display: flex;
   }
