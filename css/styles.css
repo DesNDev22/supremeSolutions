@@ -101,7 +101,7 @@
   }
   .CTA-Float {
     position: fixed;
-    bottom: 0;
+    bottom: -100;
     right: 5%;
     transition: bottom 0.3s ease;
   }
@@ -113,8 +113,11 @@
     align-items: center;
   }
   .foot-menu-items {
-    width: 60%;
+    max-width: 60%;
     font-size: 1rem;
+  }
+  .foot-menu-items ul{
+    gap: 3rem;
   }
   .foot-menu-social {
     width: 30%;
@@ -146,4 +149,3 @@
     font-size: 0.67rem;
     font-weight: lighter;
   }
-  

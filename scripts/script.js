@@ -1,6 +1,6 @@
 const ctaButton = document.querySelector('.CTA-Float');
 const heroSection = document.querySelector('.hero');
-const footerSection = document.querySelector('.nav-footer');
+const footerSection = document.querySelector('.foot-page');
 
 // Function to check the scroll position and show/hide the CTA button
 function toggleCTAButton() {
