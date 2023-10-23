@@ -26,7 +26,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     line-height: 1.4;
-    background-color: #F5F5F5;
+    background-color: #FDFDFD;
   }
   h1 {
     font-family: 'Michroma', sans-serif;
@@ -105,10 +105,35 @@
     right: 5%;
     transition: bottom 0.3s ease;
   }
-  .nav-header, .logo, .menu, .menu-items, .nav-footer, .social-media, .foot-menu-items ul {
+  .nav-header, .logo, .menu, .nav-footer, .social-media, .foot-menu-items ul {
     display: flex;
     justify-content: space-between;
   }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 35%;
+    padding: 1rem;
+    gap: .5rem;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(178, 32, 55, 0.85);
+    border: .5px solid #DCDB29;
+    position: fixed;
+    top: -300px;
+    right: 5%;
+    transition: top 0.3s ease;
+  }
+  .showMenu {
+    top: 4rem;
+  }
+  .close-icon {
+    flex-basis: 0;
+    display: none;
+  }
+
   .nav-footer {
     align-items: center;
   }
