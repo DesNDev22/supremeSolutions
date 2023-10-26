@@ -54,12 +54,22 @@
   .hero, .claims, .divider, .cosmetic {
     padding: 5%;
   }
+  .hero {
+    background: url('../img/heroimagesm.webp') no-repeat center/cover;
+    
+    @supports (background-image: image-set(url('../img/heroimagesm.webp') 1.0)) {
+        background-color: #000;
+    }
+  }
   .nav-header, footer {
     padding: 5%;
   }
   .nav-header, .hero, footer {
     background-color: #000;
     color: #FDFDFD;
+  }
+  .hero-content {
+    background: rgba(0,0,0,0.5);
   }
   .nav-header {
     height: 6rem;
