@@ -30,14 +30,14 @@
   }
   h1 {
     font-family: 'Michroma', sans-serif;
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 2.2rem;
+    line-height: 1.4;
     text-align: center;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.4;
     display: inline-block;
     padding: 3% 0 0 0;
   }
@@ -55,7 +55,7 @@
     padding: 5%;
   }
   .nav-header, footer {
-    padding: 2%
+    padding: 3% 5% 3% 5%
   }
   .nav-header, .hero, footer {
     background-color: #000;
@@ -73,7 +73,7 @@
 /*    width: 80%;*/
   }
   .slogan {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: lighter;
     text-align: center;
   }
