@@ -55,22 +55,21 @@
     padding: 5%;
   }
   .nav-header, footer {
-    padding: 3% 5% 3% 5%
+    padding: 5%;
   }
   .nav-header, .hero, footer {
     background-color: #000;
     color: #FDFDFD;
   }
   .nav-header {
-    height: 4rem;
+    height: 6rem;
   }
   .logo {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
   .logoimg {
-    max-width: 50%;
-/*    width: 80%;*/
+    max-width: 70%;
   }
   .slogan {
     font-size: 1.6rem;
@@ -79,6 +78,7 @@
   }
   .hamburguer {
     font-size: 2.2rem;
+    align-items: center;
   }
   .social-links {
     font-size: 2rem;
