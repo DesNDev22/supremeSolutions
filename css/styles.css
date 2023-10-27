@@ -55,11 +55,7 @@
     padding: 5%;
   }
   .hero {
-    background: url('../img/heroimagesm.webp') no-repeat center/cover;
-    
-    @supports (background-image: image-set(url('../img/heroimagesm.webp') 1.0)) {
-        background-color: #000;
-    }
+    background: url('../img/heroimagesm.jpg') no-repeat center/cover;
   }
   .nav-header, footer {
     padding: 5%;
