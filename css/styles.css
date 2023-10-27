@@ -104,6 +104,7 @@
     border-radius: 1rem;
     color: #FDFDFD;
     margin: 3% auto 3% auto;
+    box-shadow: 3px 3px 5px #444445;
   }
   .CTA-Float {
     position: fixed;
@@ -119,7 +120,7 @@
   .menu-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-end;
     width: 35%;
     padding: 1rem;
