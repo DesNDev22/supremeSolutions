@@ -123,7 +123,7 @@
     align-items: flex-end;
     width: 35%;
     padding: 1rem;
-    gap: .5rem;
+    gap: 2rem;
     border-radius: 0 0 5px 5px;
     background-color: rgba(178, 32, 55, 0.85);
     border: .5px solid #DCDB29;
