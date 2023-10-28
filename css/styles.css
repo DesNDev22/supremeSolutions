@@ -118,14 +118,14 @@
   .claims, .cosmetic {
     padding-top: 2%;
   }
-  .main-CTA {
+  .centered-button {
     display: flex;
     align-content: center;
+  }
+  .main-CTA {
     background-color: #b22037;
     min-width: 16.5rem;
     min-height: 4rem;
-    justify-content: center;
-    align-items: center;
     border-radius: 1rem;
     color: #FDFDFD;
     margin: 3% auto 3% auto;
@@ -160,7 +160,7 @@
     transition: top 0.3s ease;
   }
   .showMenu {
-    top: 4rem;
+    top: 5rem;
   }
   .close-icon {
     flex-basis: 0;
@@ -195,6 +195,10 @@
     font-size: 1.4rem;
     text-align: center;
     font-weight: bold;
+  }
+  .service-pic {
+    border-radius: 3rem 0 3rem 0;
+    overflow: hidden;
   }
   .services {
     display: flex;
