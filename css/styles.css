@@ -154,7 +154,7 @@
     border-radius: 0 0 5px 5px;
     background-color: rgba(178, 32, 55, 0.85);
     border: .5px solid #DCDB29;
-    position: fixed;
+    position: absolute;
     top: -300px;
     right: 5%;
     transition: top 0.3s ease;
@@ -195,16 +195,13 @@
   }
   .card-service img {
     width: 100%;
+    border-radius: 1rem;
   }
   .service {
     padding-bottom: 1.5rem;
     font-size: 1.4rem;
     text-align: center;
     font-weight: bold;
-  }
-  .service-pic {
-    border-radius: 3rem 0 3rem 0;
-    overflow: hidden;
   }
   .services {
     display: flex;
