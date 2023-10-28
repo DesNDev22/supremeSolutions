@@ -57,6 +57,31 @@
   .hero {
     background: url('../img/heroimagesm.jpg') no-repeat center/cover;
   }
+  .transp-claims, .transp-cosmetic {
+    position: relative;
+  }
+  .transp-claims::before, .transp-cosmetic::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .transp-claims::before {
+    background-image: url('../img/policesirensm.jpg');
+  }
+  .transp-cosmetic::before {
+    background-image: url('../img/cosmeticUpgradesSm.jpg');
+  }
+  .claims, .cosmetic {
+    position: relative;
+  }
   .nav-header, footer {
     padding: 5%;
   }
@@ -90,7 +115,7 @@
     font-size: 2rem;
   }
   .claims, .cosmetic {
-    background-color: #cacaca;
+    /* background-color: #cacaca; */
     padding-top: 2%;
   }
   .main-CTA {
@@ -111,6 +136,7 @@
     bottom: -100;
     right: 5%;
     transition: bottom 0.3s ease;
+    z-index: 1;
   }
   .nav-header, .logo, .menu, .nav-footer, .social-media, .foot-menu-items ul {
     display: flex;
