@@ -26,7 +26,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     line-height: 1.4;
-    background-color: #FDFDFD;
+    background-color: #F5F5F5;
   }
   h1 {
     font-family: 'Michroma', sans-serif;
@@ -52,8 +52,11 @@
     text-decoration: none;
     display: inline-block;
   }
-  .hero, .claims, .divider, .cosmetic {
+  .hero, .claims, .divider, .cosmetic, .foot-page {
     padding: 5%;
+  }
+  .our-services {
+    padding: 5% 5% 0 5%;
   }
   .hero {
     background: url('../img/heroimagesm.jpg') no-repeat center/cover;
@@ -82,6 +85,7 @@
   }
   .claims, .cosmetic {
     position: relative;
+    padding-top: 2%;
   }
   .nav-header, footer {
     padding: 5%;
@@ -115,9 +119,6 @@
   .social-links {
     font-size: 2rem;
   }
-  .claims, .cosmetic {
-    padding-top: 2%;
-  }
   .centered-button {
     display: flex;
     align-content: center;
@@ -142,7 +143,6 @@
     display: flex;
     justify-content: space-between;
   }
-
   .menu-items {
     display: flex;
     flex-direction: column;
@@ -159,6 +159,13 @@
     right: 5%;
     transition: top 0.3s ease;
   }
+  .list-of-services {
+    padding-left: 2rem;
+  }
+  .service-item {
+    text-indent: -1rem;
+    list-style: disc inside;
+  }
   .showMenu {
     top: 5rem;
   }
@@ -166,7 +173,6 @@
     flex-basis: 0;
     display: none;
   }
-
   .nav-footer {
     align-items: center;
   }
