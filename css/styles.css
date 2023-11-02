@@ -210,7 +210,13 @@
     padding: 3% 0 3% 0;
   }
   .copyright {
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
     font-size: 0.67rem;
     font-weight: lighter;
+  }
+  .credits-Link {
+    text-decoration: underline;
+    font-weight: bold;
   }
