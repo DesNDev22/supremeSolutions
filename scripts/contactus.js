@@ -17,7 +17,7 @@ function initMap() {
 // Load the Google Maps JavaScript API script with your API key
 function loadGoogleMapsScript() {
     // Fetch the API key from the serverless function
-    fetch('/.netlify/functions/api-key')
+    fetch('/netlify/functions/api-key')
         .then(response => response.json())
         .then(data => {
             const apiKey = data.apiKey;
@@ -29,7 +29,7 @@ function loadGoogleMapsScript() {
             document.head.appendChild(script);
         })
         .catch(error => {
-            console.error('Failed to retrieve the API key:', error);
+            alert ('Failed to retrieve the API key:', error);
         });
 
 }
