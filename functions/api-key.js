@@ -1,5 +1,5 @@
 // Netlify Function to retrieve the API key
-exports.handler = async (event, context) => {
+exports default async (req, context) => {
     // Securely fetch and return the API key
     const apiKey = Netlify.env.get("GOOGLE_MAPS_API_KEY");
     return {
