@@ -220,3 +220,8 @@
     text-decoration: underline;
     font-weight: bold;
   }
+  #map {
+    height: 300px;
+    width: 300px;
+    background-color: #DCDB29;
+  }
