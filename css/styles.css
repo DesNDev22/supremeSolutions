@@ -175,6 +175,7 @@
   }
   .showMenu {
     top: 5rem;
+    z-index: 1;
   }
   .close-icon {
     flex-basis: 0;
@@ -233,7 +234,6 @@
     border: #444445 solid 1px;
     border-radius: 5px;
     margin-top: 3%;
-    z-index: -1;
   }
   .inlinetext {
     display: block;
