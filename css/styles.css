@@ -238,3 +238,12 @@
   .inlinetext {
     display: block;
   }
+  .testimonial-carrousel {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    overflow: auto;
+  }
+  .testimonial {
+    min-width: 80%;
+  }
