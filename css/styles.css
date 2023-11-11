@@ -253,7 +253,9 @@ a {
   font-style: italic;
   color: #444445;
   font-weight: 400;
-  border-right: 1px solid hsl(0, 0%, 80%);
+}
+.testimonial:not(:last-child) {
+  border-right: 1px solid #ccc;
 }
 .carousel {
   padding-bottom: 5%;
