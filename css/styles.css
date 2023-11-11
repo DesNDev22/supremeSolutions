@@ -3,247 +3,268 @@
 /*******************************************/
 /* Box Model Hack */
 *{
-    box-sizing: border-box;
-  }
-  button {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    border: none;
-    color: inherit;
-  }
-  /******************************************
-  /* BASE STYLES
-  /*******************************************/
-  html {
-    font-size: .625rem;
-    letter-spacing: 5%;
-    color:#000;
-  }
-  body {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    background-color: #F5F5F5;
-  }
-  h1 {
-    font-family: 'Michroma', sans-serif;
-    font-size: 2.2rem;
-    text-align: center;
-  }
-  h2, h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
-  h2 {
-    text-align: center;
-  }
-  h3, h4 {
-    display: inline-block;
-    padding: 3% 0 0 0;
-  }
-  h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .drk-bkg {
-    padding-top: 4%;
-  }
-  p {
-    padding: 2% 0 3% 0;
-  }
-  a {
-    text-decoration: none;
-    display: inline-block;
-  }
-  .hero, .claims, .divider, .cosmetic, .foot-page {
-    padding: 5%;
-  }
-  .section-padding {
-    padding: 5% 5% 0 5%;
-  }
-  .hero {
-    background: url('../img/heroimagesm.jpg') no-repeat center/cover;
-  }
-  .transp-claims, .transp-cosmetic {
-    position: relative;
-  }
-  .transp-claims::before, .transp-cosmetic::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .transp-claims::before {
-    background-image: url('../img/policesirensm.jpg');
-  }
-  .transp-cosmetic::before {
-    background-image: url('../img/cosmeticUpgradesSm.jpg');
-  }
-  .claims, .cosmetic {
-    position: relative;
-    padding-top: 2%;
-  }
-  .nav-header, footer {
-    padding: 5%;
-  }
-  .nav-header, .hero, footer {
-    background-color: #000;
-    color: #FDFDFD;
-  }
-  .hero-content {
-    background: rgba(0,0,0,0.5);
-  }
-  .nav-header {
-    height: 6rem;
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  .logoimg {
-    max-width: 70%;
-  }
-  .slogan {
-    font-size: 1.6rem;
-    font-weight: lighter;
-    text-align: center;
-  }
-  .hamburguer {
-    font-size: 2.2rem;
-    align-items: center;
-  }
-  .social-links {
-    font-size: 2rem;
-  }
-  .centered-button {
-    display: flex;
-    align-content: center;
-  }
-  .main-CTA {
-    background-color: #b22037;
-    min-width: 16.5rem;
-    min-height: 4rem;
-    border-radius: 1rem;
-    color: #FDFDFD;
-    margin: 3% auto 3% auto;
-    box-shadow: 3px 3px 5px #444445;
-  }
-  .CTA-Float {
-    position: fixed;
-    bottom: -100;
-    right: 5%;
-    transition: bottom 0.3s ease;
-    z-index: 1;
-  }
-  .nav-header, .logo, .menu, .nav-footer, .social-media, .foot-menu-items ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 35%;
-    padding: 1rem;
-    gap: 2rem;
-    border-radius: 0 0 5px 5px;
-    background-color: rgba(178, 32, 55, 0.85);
-    border: .5px solid #DCDB29;
-    position: absolute;
-    top: -300px;
-    right: 5%;
-    transition: top 0.3s ease;
-  }
-  .list-of-services {
-    padding-left: 2rem;
-  }
-  .service-item {
-    text-indent: -1.5rem;
-    list-style: disc inside;
-  }
-  .showMenu {
-    top: 5rem;
-    z-index: 1;
-  }
-  .close-icon {
-    flex-basis: 0;
-    display: none;
-  }
-  .nav-footer {
-    align-items: center;
-  }
-  .foot-menu-items {
-    max-width: 70%;
-    font-size: 1rem;
-  }
-  .foot-menu-items ul{
-    gap: 3rem;
-  }
-  .foot-menu-social {
-    width: 30%;
-    justify-items: baseline;
-  }
-  .card-service {
-    border: 3px solid #DCDB29;
-    border-radius: 3rem 0 3rem 0;
-    box-shadow: inset 0 0 0 3px #b22037;
-    padding: 1.5rem;
-  }
-  .card-service img {
-    width: 100%;
-    border-radius: 1rem;
-  }
-  .service {
-    padding-bottom: 1.5rem;
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: bold;
-  }
-  .services {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 3% 0 3% 0;
-  }
-  .copyright {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    font-size: 0.67rem;
-    font-weight: lighter;
-  }
-  .credits-Link {
-    text-decoration: underline;
-    font-weight: bold;
-  }
-  #map {
-    height: calc(90vw);
-    max-width: 100%;
-    border: #444445 solid 1px;
-    border-radius: 5px;
-    margin-top: 3%;
-  }
-  .inlinetext {
-    display: block;
-  }
-  .testimonial-carrousel {
-    display: flex;
-    width: 100%;
-    gap: 5%;
-    overflow: auto;
-  }
-  .testimonial {
-    min-width: 80%;
-  }
+  box-sizing: border-box;
+}
+button {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  color: inherit;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: .625rem;
+  letter-spacing: 5%;
+  color:#000;
+}
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  background-color: #F5F5F5;
+}
+h1 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+}
+h2, h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+}
+h3, h4 {
+  display: block;
+  padding: 3% 0 0 0;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.drk-bkg {
+  padding-top: 4%;
+}
+p {
+  padding: 2% 0 3% 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.hero, .claims, .divider, .cosmetic, .foot-page {
+  padding: 5%;
+}
+.section-padding {
+  padding: 5% 5% 0 5%;
+}
+.hero {
+  background: url('../img/heroimagesm.jpg') no-repeat center/cover;
+}
+.transp-claims, .transp-cosmetic {
+  position: relative;
+}
+.transp-claims::before, .transp-cosmetic::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.transp-claims::before {
+  background-image: url('../img/policesirensm.jpg');
+}
+.transp-cosmetic::before {
+  background-image: url('../img/cosmeticUpgradesSm.jpg');
+}
+.claims, .cosmetic {
+  position: relative;
+  padding-top: 2%;
+}
+.nav-header, footer {
+  padding: 5%;
+}
+.nav-header, .hero, footer {
+  background-color: #000;
+  color: #FDFDFD;
+}
+.hero-content {
+  background: rgba(0,0,0,0.5);
+}
+.nav-header {
+  height: 6rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logoimg {
+  max-width: 70%;
+}
+.slogan {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  text-align: center;
+}
+.hamburguer {
+  font-size: 2.2rem;
+  align-items: center;
+}
+.social-links {
+  font-size: 2rem;
+}
+.centered-button {
+  display: flex;
+  align-content: center;
+}
+.main-CTA {
+  background-color: #b22037;
+  min-width: 16.5rem;
+  min-height: 4rem;
+  border-radius: 1rem;
+  color: #FDFDFD;
+  margin: 3% auto 3% auto;
+  box-shadow: 3px 3px 5px #444445;
+}
+.CTA-Float {
+  position: fixed;
+  bottom: -100;
+  right: 5%;
+  transition: bottom 0.3s ease;
+  z-index: 1;
+}
+.nav-header, .logo, .menu, .nav-footer, .social-media, .foot-menu-items ul {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 35%;
+  padding: 1rem;
+  gap: 2rem;
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(178, 32, 55, 0.85);
+  border: .5px solid #DCDB29;
+  position: absolute;
+  top: -300px;
+  right: 5%;
+  transition: top 0.3s ease;
+}
+.list-of-services {
+  padding-left: 2rem;
+}
+.service-item {
+  text-indent: -1.5rem;
+  list-style: disc inside;
+}
+.showMenu {
+  top: 5rem;
+  z-index: 1;
+}
+.close-icon {
+  flex-basis: 0;
+  display: none;
+}
+.nav-footer {
+  align-items: center;
+}
+.foot-menu-items {
+  max-width: 70%;
+  font-size: 1rem;
+}
+.foot-menu-items ul{
+  gap: 3rem;
+}
+.foot-menu-social {
+  width: 30%;
+  justify-items: baseline;
+}
+.card-service {
+  border: 3px solid #DCDB29;
+  border-radius: 3rem 0 3rem 0;
+  box-shadow: inset 0 0 0 3px #b22037;
+  padding: 1.5rem;
+}
+.card-service img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.service {
+  padding-bottom: 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3% 0 3% 0;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  font-size: 0.67rem;
+  font-weight: lighter;
+}
+.credits-Link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+#map {
+  height: calc(90vw);
+  max-width: 100%;
+  border: #444445 solid 1px;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+.inlinetext {
+  display: block;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial {
+  flex: 0 0 90%;
+  padding: 4%;
+  /* background-color: #ccc; */
+  /* border: 1px solid #ccc; */
+  gap: 6rem;
+  /* margin-right: 20px; */
+  transition: transform 0.5s ease;
+  font-style: italic;
+  font-weight: 400;
+  border-right: 1px solid #ccc;
+}
+
+.carousel {
+  padding-bottom: 5%;
+}
