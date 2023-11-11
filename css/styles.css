@@ -238,12 +238,6 @@ a {
 .inlinetext {
   display: block;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .testimonial-carousel {
   display: flex;
   align-items: center;
@@ -251,20 +245,16 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
-
 .testimonial {
-  flex: 0 0 90%;
+  flex: 0 0 93%;
   padding: 4%;
-  /* background-color: #ccc; */
-  /* border: 1px solid #ccc; */
   gap: 6rem;
-  /* margin-right: 20px; */
   transition: transform 0.5s ease;
   font-style: italic;
+  color: #444445;
   font-weight: 400;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid hsl(0, 0%, 80%);
 }
-
 .carousel {
   padding-bottom: 5%;
 }
