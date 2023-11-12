@@ -341,4 +341,7 @@ a {
     border-radius: 5px;
     margin-top: 3%;
   }
-}
+  .nav-header, footer {
+    padding: 10px 20px;
+  }
+  }
