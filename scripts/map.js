@@ -1,7 +1,7 @@
-window.addEventListener('load', initMap);
+// window.addEventListener('load', initMap);
 
-// Display Google Maps with business location
-function initMap() {
+// // Display Google Maps with business location
+// function initMap() {
     const location = { lat: 29.80054117046171, lng: -95.41337116441802 }; // Replace with your actual latitude and longitude
 
     const map = new google.maps.Map(document.getElementById('map'), {
@@ -14,4 +14,4 @@ function initMap() {
         map: map,
         title: 'Marker Title'
     });
-}
+// }
