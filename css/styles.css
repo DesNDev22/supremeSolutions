@@ -5,21 +5,13 @@
 *{
   box-sizing: border-box;
 }
-button {
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  box-shadow: none;
-  border: none;
-  color: inherit;
-}
 /******************************************
 /* BASE STYLES
 /*******************************************/
 html {
   font-size: .625rem;
   letter-spacing: 5%;
-  color:#000;
+  color:#0A0A0A;
 }
 body {
   position: relative;
@@ -48,6 +40,15 @@ h3, h4 {
 h4 {
   font-size: 1.2rem;
   font-weight: bold;
+}
+button {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  color: inherit;
+  font-size: 1.2rem;
 }
 .drk-bkg {
   padding-top: 4%;
@@ -98,7 +99,7 @@ a {
   padding: 5%;
 }
 .nav-header, .hero, footer {
-  background-color: #000;
+  background-color: #0A0A0A;
   color: #FDFDFD;
 }
 .hero-content {
@@ -112,7 +113,7 @@ a {
   align-items: center;
 }
 .logoimg {
-  max-width: 70%;
+  max-width: 100%;
 }
 .slogan {
   font-size: 1.6rem;
@@ -146,9 +147,16 @@ a {
   transition: bottom 0.3s ease;
   z-index: 1;
 }
-.nav-header, .logo, .menu, .nav-footer, .social-media, .foot-menu-items ul {
+.nav-header, .menu, .nav-footer, .social-media, .foot-menu-items ul {
   display: flex;
   justify-content: space-between;
+}
+.logo, .menu   {
+  width: 50%;
+}
+.menu {
+  align-items: flex-end;
+  justify-content: end;
 }
 .menu-items {
   display: flex;
@@ -172,6 +180,7 @@ a {
 .service-item {
   text-indent: -1.5rem;
   list-style: disc inside;
+  margin-top: 2%;
 }
 .showMenu {
   top: 5rem;
@@ -202,7 +211,7 @@ a {
   padding: 1.5rem;
 }
 .card-service img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 1rem;
 }
 .service {
@@ -259,4 +268,71 @@ a {
 }
 .carousel {
   padding-bottom: 5%;
+}
+@media screen and (min-width: 600px) {
+  /* Tablet styles & up */
+  html {
+    font-size: 0.85rem;
+  }
+  body {
+    font-weight: 400;
+  }
+  .logoimg {
+    max-width: 100%;
+  }
+  .hamburguer {
+    display: none;
+  }
+  .menu-items {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-self: center;
+    width: 100%;
+    padding: 0;
+    gap: 1rem;
+    border-radius: none;
+    background-color: transparent;
+    border: none;
+    top: initial;
+    right: initial;
+    position: relative;
+  }
+  .menuItem {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .hero {
+    background: url('../img/heroimage.jpg') no-repeat center/cover;
+  }
+  .transp-claims::before {
+    background-image: url('../img/policesiren.jpg');
+  }
+  .transp-cosmetic::before {
+    background-image: url('../img/cosmeticUpgrades.jpg');
+  }
+  .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }  
+  .card-service {
+    flex: 1 0 45%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /* Desktop styles */
+  html {
+    font-size: 1.2rem;
+  }
+  .contact-info {
+    display: flex;
+  }  
+  #map {
+    height: calc(45vw);
+    width: calc(45vw);
+    border: #444445 solid 1px;
+    border-radius: 5px;
+    margin-top: 3%;
+  }
 }
