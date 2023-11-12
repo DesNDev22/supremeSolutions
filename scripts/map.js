@@ -15,4 +15,4 @@ function initMap() {
 }
 
 // Call the function to load the Google Maps API
-window.addEventListener('load', initMap);
+// window.addEventListener('load', initMap);

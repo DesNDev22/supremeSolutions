@@ -326,6 +326,8 @@ a {
     font-size: 1.2rem;
   }
   .contact-info {
+    display: -webkit-flex; /* Safari */
+    display: -ms-flexbox; /* IE 10 */
     display: flex;
   }  
   #map {
