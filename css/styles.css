@@ -107,12 +107,13 @@ a {
 }
 .nav-header {
   max-height: 60px;
+  align-content: center;
 }
 .logo {
   display: flex;
-  justify-items: center;
 }
 .logoimg {
+  align-self: center;
   max-width: 100%;
 }
 .slogan {
@@ -247,6 +248,7 @@ a {
 .inlinetext {
   display: block;
 }
+
 .testimonial-carousel {
   display: flex;
   align-items: center;
@@ -269,6 +271,7 @@ a {
 .carousel {
   padding-bottom: 5%;
 }
+
 @media screen and (min-width: 600px) {
   /* Tablet styles & up */
   html {
