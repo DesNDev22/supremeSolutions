@@ -316,7 +316,7 @@ a {
   }
   .services {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
   }  
   .card-service {
