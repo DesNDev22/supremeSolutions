@@ -2,38 +2,40 @@
 /* CSS
 /*******************************************/
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 /******************************************
 /* BASE STYLES
 /*******************************************/
 html {
-  font-size: .625rem;
+  font-size: 0.625rem;
   letter-spacing: 5%;
-  color:#0A0A0A;
+  color: #0a0a0a;
 }
 body {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.4;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 h1 {
-  font-family: 'Michroma', sans-serif;
+  font-family: "Michroma", sans-serif;
   font-size: 2.2rem;
   text-align: center;
 }
-h2, h3 {
+h2,
+h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
 h2 {
   text-align: center;
 }
-h3, h4 {
+h3,
+h4 {
   display: block;
   padding: 3% 0 0 0;
 }
@@ -60,20 +62,26 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-.hero, .claims, .divider, .cosmetic, .foot-page {
+.hero,
+.claims,
+.divider,
+.cosmetic,
+.foot-page {
   padding: 5%;
 }
 .section-padding {
   padding: 5% 5% 0 5%;
 }
 .hero {
-  background: url('../img/heroimagesm.jpg') no-repeat center/cover;
+  background: url("../img/heroimagesm.jpg") no-repeat center/cover;
 }
-.transp-claims, .transp-cosmetic {
+.transp-claims,
+.transp-cosmetic {
   position: relative;
 }
-.transp-claims::before, .transp-cosmetic::before {
-  content: ' ';
+.transp-claims::before,
+.transp-cosmetic::before {
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -86,24 +94,28 @@ a {
   background-size: cover;
 }
 .transp-claims::before {
-  background-image: url('../img/policesirensm.jpg');
+  background-image: url("../img/policesirensm.jpg");
 }
 .transp-cosmetic::before {
-  background-image: url('../img/cosmeticUpgradesSm.jpg');
+  background-image: url("../img/cosmeticUpgradesSm.jpg");
 }
-.claims, .cosmetic {
+.claims,
+.cosmetic {
   position: relative;
   padding-top: 2%;
 }
-.nav-header, footer {
+.nav-header,
+footer {
   padding: 10px;
 }
-.nav-header, .hero, footer {
-  background-color: #0A0A0A;
-  color: #FDFDFD;
+.nav-header,
+.hero,
+footer {
+  background-color: #0a0a0a;
+  color: #fdfdfd;
 }
 .hero-content {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 .nav-header {
   max-height: 60px;
@@ -137,7 +149,7 @@ a {
   min-width: 16.5rem;
   min-height: 4rem;
   border-radius: 1rem;
-  color: #FDFDFD;
+  color: #fdfdfd;
   margin: 3% auto 3% auto;
   box-shadow: 3px 3px 5px #444445;
 }
@@ -148,11 +160,16 @@ a {
   transition: bottom 0.3s ease;
   z-index: 1;
 }
-.nav-header, .menu, .nav-footer, .social-media, .foot-menu-items ul {
+.nav-header,
+.menu,
+.nav-footer,
+.social-media,
+.foot-menu-items ul {
   display: flex;
   justify-content: space-between;
 }
-.logo, .menu   {
+.logo,
+.menu {
   width: 50%;
 }
 .menu {
@@ -169,7 +186,7 @@ a {
   gap: 2rem;
   border-radius: 0 0 5px 5px;
   background-color: rgba(178, 32, 55, 0.85);
-  border: .5px solid #DCDB29;
+  border: 0.5px solid #dcdb29;
   position: absolute;
   top: -300px;
   right: 5%;
@@ -198,7 +215,7 @@ a {
   max-width: 70%;
   font-size: 1rem;
 }
-.foot-menu-items ul{
+.foot-menu-items ul {
   gap: 3rem;
 }
 .foot-menu-social {
@@ -206,14 +223,17 @@ a {
   justify-items: baseline;
 }
 .card-service {
-  border: 3px solid #DCDB29;
+  border: 3px solid #dcdb29;
   border-radius: 3rem 0 3rem 0;
   box-shadow: inset 0 0 0 3px #b22037;
   padding: 1.5rem;
 }
 .card-service img {
-  max-width: 100%;
   border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 .service {
   padding-bottom: 1.5rem;
@@ -306,19 +326,19 @@ a {
     font-weight: lighter;
   }
   .hero {
-    background: url('../img/heroimage.jpg') no-repeat center/cover;
+    background: url("../img/heroimage.jpg") no-repeat center/cover;
   }
   .transp-claims::before {
-    background-image: url('../img/policesiren.jpg');
+    background-image: url("../img/policesiren.jpg");
   }
   .transp-cosmetic::before {
-    background-image: url('../img/cosmeticUpgrades.jpg');
+    background-image: url("../img/cosmeticUpgrades.jpg");
   }
   .services {
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
-  }  
+  }
   .card-service {
     flex: 0 0 40%;
   }
@@ -336,7 +356,7 @@ a {
     display: -webkit-flex; /* Safari */
     display: -ms-flexbox; /* IE 10 */
     display: flex;
-  }  
+  }
   #map {
     height: calc(45vw);
     width: calc(45vw);
@@ -344,7 +364,8 @@ a {
     border-radius: 5px;
     margin-top: 3%;
   }
-  .nav-header, footer {
+  .nav-header,
+  footer {
     padding: 10px 20px;
   }
-  }
+}
